@@ -15,7 +15,7 @@ const WebSocketBoard: React.FC = () => {
   const [getMessage, setGetMessage] = useState('');
   const [sendMessage, setSendMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const [socket, setSocket] = useState<WebSocket>();
+  const [socket, setSocket] = useState<WebSocket | null>();
   const [isConnect, setIsConnect] = useState(false);
   const [wsAddress, setWsAddress] = useState<WsAddress>({
     ip1: '192',
